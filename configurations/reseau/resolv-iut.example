@@ -1,0 +1,3 @@
+# Exemple DNS universitaire ayant répondu pendant le test documenté
+# Un DNS interne peut ne pas être joignable en dehors du réseau universitaire.
+nameserver 10.2.2.201

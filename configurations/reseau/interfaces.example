@@ -1,0 +1,12 @@
+# MODELE DIDACTIQUE : vérifier le nom de la carte avec « ip link ».
+# Ne pas remplacer un fichier réseau sur une machine distante sans accès de secours.
+
+source /etc/network/interfaces.d/*
+
+auto lo
+iface lo inet loopback
+
+auto enp0s3
+iface enp0s3 inet static
+    address 172.16.1.230/24
+    gateway 172.16.1.1

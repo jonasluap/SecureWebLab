@@ -1,0 +1,51 @@
+# Machines virtuelles et images (publication séparée, après nettoyage)
+*.vdi
+*.vmdk
+*.vhd
+*.vhdx
+*.vbox
+*.vbox-prev
+*.ova
+*.ovf
+*.iso
+*.qcow2
+*.sav
+*.vram
+*.nvram
+Snapshots/
+
+# Secrets : clés SSH et certificats privés
+id_rsa
+id_rsa.*
+id_ed25519
+id_ed25519.*
+id_ecdsa
+id_ecdsa.*
+*.ppk
+*.pem
+*.key
+*.p12
+*.pfx
+known_hosts
+known_hosts.old
+authorized_keys
+
+# Identifiants / environnements
+.env
+.env.*
+!.env.example
+*.secret
+secrets/
+credentials.txt
+passwords.txt
+
+# Sauvegardes / logs / outils
+*.log
+*.bak
+*.swp
+*.tmp
+__pycache__/
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

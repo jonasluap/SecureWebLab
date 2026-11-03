@@ -1,0 +1,29 @@
+name: Vérification des exemples
+on:
+  push:
+  pull_request:
+
+jobs:
+  syntaxe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupérer le dépôt
+        uses: actions/checkout@v4
+      - name: Vérifier la syntaxe Bash (sans exécuter les scripts système)
+        run: |
+          for file in scripts/debian/*.sh; do
+            echo "Contrôle : $file"
+            bash -n "$file"
+          done
+      - name: Vérifier les fichiers principaux
+        run: |
+          test -f README.md
+          test -f site-web/index.html
+          test -f configurations/ssh/00-secureweblab.conf
+          test -f configurations/nginx/default-http.conf
+      - name: Vérifier que les secrets évidents ne sont pas suivis
+        run: |
+          if git ls-files | grep -E '(^|/)(id_ed25519|id_rsa|known_hosts|authorized_keys)$|\.(vdi|vmdk|ova|iso|ppk|p12|pfx|pem|key)$'; then
+            echo 'Fichier sensible potentiel suivi par Git.' >&2
+            exit 1
+          fi

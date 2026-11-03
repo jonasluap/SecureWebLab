@@ -1,0 +1,9 @@
+# EXEMPLE UNIQUEMENT. Aucune clé utilisateur authentique n'est incluse.
+# Une véritable entrée est une ligne du type :
+# ssh-ed25519 <CLE_PUBLIQUE_BASE64_GENEREE_SUR_LA_VM_WINDOWS> secureweblab-demo
+#
+# Obtenir cette ligne avec PowerShell sur Windows :
+# Get-Content "$HOME\.ssh\secureweblab_demo_ed25519.pub"
+#
+# L'installer via scripts/debian/02-autoriser-cle-publique.sh
+# Ne jamais copier un fichier de clé privée dans authorized_keys.

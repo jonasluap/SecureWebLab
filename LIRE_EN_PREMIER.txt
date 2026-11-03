@@ -1,0 +1,17 @@
+SECUREWEBLAB — DEPOT GITHUB PRÊT À PUBLIER
+=======================================
+
+1. Ouvrir README.md pour la présentation du laboratoire.
+2. Lire MISE_EN_LIGNE_GITHUB.md pour publier le dossier vers :
+   https://github.com/jonasluap/SecureWebLab
+3. Utiliser documentation/ pour le cours, les 70 questions-réponses,
+   le compte rendu des incidents et les commandes validées.
+4. Utiliser laboratoire/ pour recréer les VM et exécuter les tests.
+5. Les scripts sont facultatifs : les LIRE avant de les lancer.
+
+Le dossier captures/ contient 53 images de tests du projet.
+AUCUN mot de passe personnel, clé SSH privée réelle, image VDI/OVA
+ni ISO Windows n'est fourni. Des exemples fictifs et les commandes
+pour générer les clés nécessaires sont inclus.
+
+VM DEBIAN PRECONFIGUREE : non incluse dans cette version.
